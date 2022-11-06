@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main__section {
+  background-color: hsl(214deg, 20%, 16%);
+  color: white;
+  height: 400px;
+  width: 400px;
+  border-radius: 35px;
+  padding: 30px;
+}
+body .main__section .star__section {
+  background-color: hsl(216deg, 18%, 22%);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+body .main__section .text__section {
+  margin: 30px 0;
+}
+body .main__section .text__section h1 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+body .main__section .text__section p {
+  color: hsl(216deg, 12%, 54%);
+  margin: 15px 0;
+  font-size: 1.05rem;
+}
+body .main__section .review_buttons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .main__section .review_buttons a button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(216deg, 18%, 22%);
+  color: hsl(216deg, 12%, 54%);
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body .main__section .review_buttons a button:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+body .main__section .submit__button {
+  margin: 20px 0;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main__section .submit__button button {
+  width: 340px;
+  height: 45px;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.1rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+body .main__section .submit__button button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}/*# sourceMappingURL=main.css.map */
