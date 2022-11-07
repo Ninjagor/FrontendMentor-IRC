@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <div class="main__section">
+  <div class="main__section" id="main">
     <div class="star__section">
       <img src="/assets/images/icon-star.svg" alt="">
     </div>
@@ -28,36 +28,37 @@
       </p>
     </div>
     <div class="review_buttons">
-      <a href="#"><button>1</button></a>
-      <a href="#"><button>2</button></a>
-      <a href="#"><button>3</button></a>
-      <a href="#"><button>4</button></a>
-      <a href="#"><button>5</button></a>
+      <button class="review_btn">1</button>
+      <button class="review_btn">2</button>
+      <button class="review_btn">3</button>
+      <button class="review_btn">4</button>
+      <button class="review_btn">5</button>
     </div>
     <div class="submit__button">
-      <a href="#"><button>Submit</button></a>
+      <button id="sbtn">Submit</button>
     </div>
   </div>
 
-  <!-- Rating state start -->
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
+  <div class="thanks__section hidden" id="thanks">
+    <div class="thximg">
+      <img src="/assets/images/illustration-thank-you.svg" alt="">
+    </div>
+    <div class="rating">
+      <p>You selected <span id="rating"></span> out of 5</p>
+    </div>
+    <div class="text">
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+  </div>
 
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Ninjagor">Ninjagor</a>.
   </div> -->
+
+  <script src="/javascript/index.js"></script>
 </body>
 </html>

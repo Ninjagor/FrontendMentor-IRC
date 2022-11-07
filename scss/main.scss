@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap');
 @import "_variables";
+@import "_mixins";
 
 // HTML Reset
 * {
@@ -10,20 +11,14 @@
 }
 
 body {
-    background-color: $verydarkblue;
+    background: $verydarkblue;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .main__section {
-        letter-spacing: .1rem;
-        background-color: $dark-blue;
-        color: white;
-        height: 400px;
-        width: 400px;
-        border-radius: 35px;
-        padding: 30px;
+        @include sectionstyle;
 
         .star__section {
             background-color: $dark-blue-two;
@@ -57,8 +52,6 @@ body {
             align-items: center;
             justify-content: space-between;
             margin-top: -10px;
-
-            a {
                 button{
                     width: 50px;
                     height: 50px;
@@ -72,11 +65,10 @@ body {
                     cursor: pointer;
 
                     &:hover {
-                        background-color: $orange;
-                        color: $white;
+                        background-color: $white;
+                        color: $orange;
                     }
                 }
-            }
         }
 
         .submit__button {
@@ -88,7 +80,7 @@ body {
             justify-content: center;
 
             button {
-                width: 340px;
+                width: 350px;
                 height: 45px;
                 border-radius: 30px;
                 border: none;
@@ -105,4 +97,50 @@ body {
             }
         }
     }
+    .thanks__section{
+        @include sectionstyle;
+        padding-top: 45px;
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .rating {
+            background-color: $dark-blue-two;
+            color: $orange;
+            border-radius: 30px;
+            width:  57%;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 30px 0 0 0;
+            font-size: 0.9rem;
+        }
+
+        .text {
+            h1 {
+                margin: 27px 0 0 0;
+                font-size: 1.7rem;
+                font-weight:  600;
+            }
+
+            p {
+                margin: 25px 0 0 0;
+                color: $medium-grey;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.selected{
+    color: $white !important;
+    background-color: $orange !important;
+}
+
+.hidden {
+    display: none !important;
 }

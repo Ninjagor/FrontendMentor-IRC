@@ -1,0 +1,9 @@
+@mixin sectionstyle{
+    letter-spacing: .07rem;
+    background: linear-gradient($dark-blue, $dark-blue-gradient);
+    color: white;
+    height: 415px;
+    width: 415px;
+    border-radius: 35px;
+    padding: 30px;
+}
